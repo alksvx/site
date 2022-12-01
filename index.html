@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block head %}
+    <title>Главная страница</title>
+    {% endblock %}
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="/">Главная страница</a></li>
+            <li><a href="/products">Продукты</a></li>
+            <li><a href="/contacts">Контакты</a></li>
+            <li><a href="/about">О компании</a></li>
+            <li><a href="/cart">Корзина</a></li>
+        </ul>
+    </header>
+
+{%block content%} {%endblock%}
+</body>
+</html>
