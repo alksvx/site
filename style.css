@@ -22,3 +22,26 @@ li a {
 li a:hover {
     background-color: #2c3e50; /* Цвет фона при наведении на кнопку */
 }
+
+.card{
+    display: inline-block;
+    width: 40%;
+    margin: 3%;
+    background-color: #C0C0C0;
+    border: double 5px #2c3e50;
+
+}
+
+.main{
+    text-align: center;
+}
+
+.card: hover{  /* Цвет при наведении*/
+    background-color: #FF0000
+}
+
+.prom{
+    color: #EE82EE;
+    font-size: 26px;
+    font-weight: bold;
+}
