@@ -1,32 +1,58 @@
-# products.html
 {% extends 'index.html' %}
 {% block head %}
-    <link rel="stylesheet" href= "/static/css/products.css">
+    <link rel="stylesheet" href="/static/css/products.css">
     <title>Продукты</title>
 {% endblock %}
+
 {% block content %}
 <table>
-  <tr>
-    <th>Наименование</th>
-    <th>Описание</th>
-    <th>Цена</th>
-    <th>Фото</th>
-    <th></th>
-  </tr>
-  <tr>
-    <td>{{product[0].name}}</td>
-    <td>{{product[0].description}}</td>
-    <td>{{product[0].price}}</td>
-    <td><img src="{{product[0].img}}"  width="120" height="90" /></td>
-    <td><button>В корзину</button></td>
-  </tr>
     <tr>
-    <td>{{product[1].name}}</td>
-    <td>{{product[1].description}}</td>
-    <td>{{product[1].price}}</td>
-    <td><img src="{{product[1].img}}"  width="120" height="90" /></td>
-    <td><button>В корзину</button></td>
-  </tr>
+        <th>Наименование</th>
+        <th>Описание</th>
+        <th>Цена</th>
+        <th>Изображение</th>
+    </tr>
+    <tr>
+        <td>Зубная щетка</td>
+        <td>Синяя зубная щетка</td>
+        <td>100 руб</td>
+        <td><img src="/static/images/toothbrush.jpg"  width="120" height="90" /></td>
+    </tr>
+    <tr>
+        <td>Шампунь</td>
+        <td>Для густых волос</td>
+        <td>200 руб</td>
+        <td><img src="/static/images/shampoo.jpg"  width="120" height="90" /></td>
+    </tr>
+    <td>Кондиционер</td>
+        <td>Для густых волос</td>
+        <td>250 руб</td>
+        <td><img src="/static/images/conditioner.jpg"  width="120" height="90" /></td>
+    </tr>
+    <tr>
+        <td>Мыло</td>
+        <td>Мыло хозяйственное 72%</td>
+        <td>60 руб</td>
+        <td><img src="/static/images/soap.jpg"  width="120" height="90" /></td>
+    </tr>
+    <tr>
+        <td>Жидкое мыло</td>
+        <td>Жидкое мыло с ароматом вишни</td>
+        <td>160 руб</td>
+        <td><img src="/static/images/liquidsoap.jpg"  width="120" height="90" /></td>
+    </tr>
+    <tr>
+        <td>Зубная паста</td>
+        <td>Зубная паста Colgate. Рекомендуют 9/10 стоматологов</td>
+        <td>200 руб</td>
+        <td><img src="/static/images/toothpaste.jpg"  width="120" height="90" /></td>
+    </tr>
+    <tr>
+        <td>Расческа</td>
+        <td>Расческа для волос</td>
+        <td>150 руб</td>
+        <td><img src="/static/images/hairbrush.jpg"  width="120" height="90" /></td>
+    </tr>
 </table>
 
 {% endblock %}
